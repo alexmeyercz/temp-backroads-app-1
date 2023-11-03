@@ -57,6 +57,69 @@ Note: Try to install from the VS Code instead
 - Drag and drop the "build" folder
 - Site Configuration -> Change Site Name
 
+### Continuos deployment
+
+#### Get to github
+
+- fix warnings (About Section)
+
+- netlify account
+- github account
+- basic git commands :
+
+  - remove existing git repo
+
+    - Windows : rmdir -Force -Recurse .git
+    - Windows : rd /s /q .git
+      Windows commands were shared by students and I have not personally tested them.
+
+  - setup new repo
+    - git init
+      create an empty git repository
+    - git add
+      adds new or changed files in your working directory
+      to the Git staging area
+    - git add .
+      adds entire project
+      apart from files/directories specified in .gitignore
+    - git commit -m "first commit"
+      A shortcut command that immediately creates a commit
+      with a passed commit message.
+    - push to github
+      git remote add origin git@github.com:your-profile/repo-name.git
+      git branch -M main
+      git push -u origin main
+
+#### Download from GitHub
+
+- Remove from PC (rename, whatever)
+- Go to GitHub and copy the link
+  - Code -> Clone -> HTTPS -> Copy link
+- Open CMD
+  - cd C:\Users\alexa\OneDrive\Util\Video Lessons\React 3
+  - git clone https://github.com/alexmeyercz/temp-backroads-app-1.git
+- Open VS Code
+  - Open the new folder in VS Code
+  - Open terminal
+  - "npm install" (all the packages are in package.json, so all the packages and commands need to be installed)
+  - "npm start"
+
+#### Updating after making the changes
+
+- After CTRL + C (to stop the server)
+  A. do again
+
+  - git add .
+  - git commit -m "message"
+  - git push -u origin main
+
+  OR
+
+  B. There is an icon with changes on the top left in VS Code (like link or share, usually with a blue number)
+
+  - If you click on it, you see the list of changed files
+  - add message
+
 ### Terminal commands
 
 - clear -> Clear terminal
