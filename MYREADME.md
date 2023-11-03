@@ -119,6 +119,7 @@ Note: Try to install from the VS Code instead
 
   - If you click on it, you see the list of changed files
   - add message
+  - click commit
 
 ### Terminal commands
 
